@@ -1,0 +1,68 @@
+.container {
+  padding: 20px;
+  background-color: antiquewhite;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(6, ifr);
+  grid-template-areas:
+    "a a a a a a"
+    "one one three three five five"
+    "1 2 3 4 5 6"
+    "11 22 33 44 55 66"
+    "two two four four r r"
+    "b b b b b b";
+  justify-items: center;
+
+  border: 5px solid gray;
+  border-radius: 50%;
+  background-color: rgb(30, 27, 27);
+  user-select: none;
+}
+
+.container > div {
+  color: rgb(222, 216, 216);
+  font-size: 35px;
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#one {
+  grid-area: one;
+}
+#three {
+  grid-area: three;
+}
+#five {
+  grid-area: five;
+}
+#two {
+  grid-area: two;
+}
+#four {
+  grid-area: four;
+}
+#r {
+  grid-area: r;
+}
+.top {
+  border-top: 1px solid rgb(222, 216, 216);
+}
+.right {
+  border-right: 1px solid rgb(222, 216, 216);
+}
+.left {
+  border-left: 1px solid rgb(222, 216, 216);
+}
+.bottom {
+  border-bottom: 1px solid rgb(222, 216, 216);
+}
+#a {
+  grid-area: a;
+}
+#b {
+  grid-area: b;
+}
